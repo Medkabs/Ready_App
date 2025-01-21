@@ -263,7 +263,7 @@ export function Testimonial({
         <div>
           {/* <Image src={testimonial.clientImg} height={36} alt="Client logo" /> */}
         </div>
-        <p className="text-indigo-200/65 before:content-['“'] after:content-['”']">
+        <p className="text-indigo-200/65 before:content-['“'] after:content-['”']"></p>
         <div>
       {isLongContent && !isExpanded ? (
         <span>
@@ -289,7 +289,7 @@ export function Testimonial({
           )}
         </div>
       )}
-    </div>        </p>
+    </div>        
         <div className="flex items-center gap-3">
           {/* <Image
             className="inline-flex shrink-0 rounded-full"

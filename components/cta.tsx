@@ -87,8 +87,15 @@ export default function Cta() {
                     value="https://particlesai.com/thanks.html"
                  />
                     <MDBContainer className="p-3 my-5 d-flex flex-column "
-                
+                  
                     >
+                     
+            <h5
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,#CC00FF,theme(colors.blue.400),theme(colors.blue.600),theme(colors.purple.300),theme(colors.purple.600))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-1xl font-semibold text-transparent md:text-1xl text-center"
+              data-aos="fade-up"
+            >
+              Feel free to leave your information here, we'll get in touch soon.
+            </h5>
                       <MDBInput
                         wrapperClass="mb-4"
                         labelClass="text-white"
@@ -137,7 +144,7 @@ export default function Cta() {
                         name="message"
                         required
                       />
-                      <div className="text-center">
+                      <div className="text-center ">
                         <MDBBtn type="submit" className="mb-4" style={{ margin: '42px', width: "46%" }}>
                           Submit
                         </MDBBtn>
