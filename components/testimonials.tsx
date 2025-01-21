@@ -38,7 +38,7 @@ const testimonials = [
       name: "Mission",
     // company: "",
      content:
-      "we are dedicated to crafting modern web applications by combining custom development with AI driven features to improve efficiency, enhance user interaction, and drive growth.",
+"We are at the forefront of modern web development, fusing human expertise with the power of AI. By seamlessly integrating custom development with AI-driven features, we craft intelligent and user-centric applications that streamline operations, enhance user engagement, and drive significant business growth. This innovative approach empowers businesses to gain a competitive edge in the digital landscape by delivering exceptional experiences that anticipate user needs and unlock new avenues for success.",
       categories: [1, 2],
   },
   {
@@ -47,7 +47,7 @@ const testimonials = [
     name: "Vision.",
     // company: "Binance",
     content:
-      "To be at the forefront of blending human-driven web development with cutting-edge AI technologies, enabling businesses to thrive in the digital age.",
+    "To be at the forefront of creating significant value for businesses by strategically blending human-driven web development with cutting-edge AI technologies, driving their success and growth in the ever-evolving digital age.",
      categories: [1, 2],
   },
   {
@@ -71,7 +71,7 @@ const testimonials = [
   {
     // img: TestimonialImg06,
     // clientImg: ClientImg06,
-    name: "Can I request changes to the web application after it's launched?",
+    name: "Can I request changes?",
     // company: "Maffell",
     content:
       " Yes, we offer flexible development services and can accommodate changes or updates to your web application after launch. Whether it’s adding new features or making design adjustments, our team is here to help.",
@@ -93,8 +93,7 @@ const testimonials = [
     name: "Will my web application be mobile friendly?",
     // company: "Forbes Inc.",
     content:
-      "Yes, all the web applications we develop are fully responsive, meaning they will work seamlessly across all devices, including smartphones and tablets.",
-    categories: [1, 3],
+"Yes, all the web applications we develop are fully responsive, providing your users with access and a consistent experience regardless of the device they are using, whether it's a desktop computer, a smartphone, or a tablet.",    categories: [1, 3],
   },
   {
     // img: TestimonialImg09,
@@ -247,6 +246,15 @@ export function Testimonial({
   category: number;
   children: React.ReactNode;
 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  const content = testimonial.content;
+  const isLongContent = content.length > 175;
+
   return (
     <article
       className={`relative rounded-2xl bg-gradient-to-br from-gray-900/50 via-gray-800/25 to-gray-900/50 p-5 backdrop-blur-sm transition-opacity before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] ${!testimonial.categories.includes(category) ? "opacity-30" : ""}`}
@@ -256,8 +264,32 @@ export function Testimonial({
           {/* <Image src={testimonial.clientImg} height={36} alt="Client logo" /> */}
         </div>
         <p className="text-indigo-200/65 before:content-['“'] after:content-['”']">
-          {children}
-        </p>
+        <div>
+      {isLongContent && !isExpanded ? (
+        <span>
+          {content.substring(0, 185)}... 
+          <div 
+            style={{ color: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', cursor: 'pointer' }} 
+            onClick={handleToggle}
+          >
+            ...see more
+          </div>
+        </span>
+      ) : (
+        <div  data-aos="fade-in-down">
+          {content} 
+          {isLongContent && (
+           <div 
+           style={{ color: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', cursor: 'pointer' }} 
+           onClick={handleToggle}
+           data-aos="fade-in-down"
+         >
+           ...see less
+         </div>
+          )}
+        </div>
+      )}
+    </div>        </p>
         <div className="flex items-center gap-3">
           {/* <Image
             className="inline-flex shrink-0 rounded-full"
