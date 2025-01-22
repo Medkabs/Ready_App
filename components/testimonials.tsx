@@ -2,44 +2,25 @@
 
 import { useState } from "react";
 import useMasonry from "@/utils/useMasonry";
-import Image, { StaticImageData } from "next/image";
-import TestimonialImg01 from "@/public/images/testimonial-01.jpg";
-import TestimonialImg02 from "@/public/images/testimonial-02.jpg";
-import TestimonialImg03 from "@/public/images/testimonial-03.jpg";
-import TestimonialImg04 from "@/public/images/testimonial-04.jpg";
-import TestimonialImg05 from "@/public/images/testimonial-05.jpg";
-import TestimonialImg06 from "@/public/images/testimonial-06.jpg";
-import TestimonialImg07 from "@/public/images/testimonial-07.jpg";
-import TestimonialImg08 from "@/public/images/testimonial-08.jpg";
-import TestimonialImg09 from "@/public/images/testimonial-09.jpg";
-import ClientImg01 from "@/public/images/client-logo-01.svg";
-import ClientImg02 from "@/public/images/client-logo-02.svg";
-import ClientImg03 from "@/public/images/client-logo-03.svg";
-import ClientImg04 from "@/public/images/client-logo-04.svg";
-import ClientImg05 from "@/public/images/client-logo-05.svg";
-import ClientImg06 from "@/public/images/client-logo-06.svg";
-import ClientImg07 from "@/public/images/client-logo-07.svg";
-import ClientImg08 from "@/public/images/client-logo-08.svg";
-import ClientImg09 from "@/public/images/client-logo-09.svg";
 
 const testimonials = [
   {
     // img: TestimonialImg01,
     // clientImg: ClientImg01,
-      name: "About US",
-      // company: "",
-      content:
-        "At Particles.Ai, we blend human creativity with the power of Artificial Intelligence to deliver high quality, secure, and scalable web applications tailored to meet your unique needs.",
-      categories: [1, 2],
+    name: "About US",
+    // company: "",
+    content:
+      "At Particles.Ai, we blend human creativity with the power of Artificial Intelligence to deliver high quality, secure, and scalable web applications tailored to meet your unique needs.",
+    categories: [1, 2],
   },
   {
     // img: TestimonialImg02,
     // clientImg: ClientImg02,
-      name: "Mission",
+    name: "Mission",
     // company: "",
-     content:
-"We are at the forefront of modern web development, fusing human expertise with the power of AI. By seamlessly integrating custom development with AI-driven features, we craft intelligent and user-centric applications that streamline operations, enhance user engagement, and drive significant business growth. This innovative approach empowers businesses to gain a competitive edge in the digital landscape by delivering exceptional experiences that anticipate user needs and unlock new avenues for success.",
-      categories: [1, 2],
+    content:
+      "We are at the forefront of modern web development, fusing human expertise with the power of AI. By seamlessly integrating custom development with AI-driven features, we craft intelligent and user-centric applications that streamline operations, enhance user engagement, and drive significant business growth. This innovative approach empowers businesses to gain a competitive edge in the digital landscape by delivering exceptional experiences that anticipate user needs and unlock new avenues for success.",
+    categories: [1, 2],
   },
   {
     // img: TestimonialImg03,
@@ -47,26 +28,26 @@ const testimonials = [
     name: "Vision.",
     // company: "Binance",
     content:
-    "To be at the forefront of creating significant value for businesses by strategically blending human-driven web development with cutting-edge AI technologies, driving their success and growth in the ever-evolving digital age.",
-     categories: [1, 2],
+      "To be at the forefront of creating significant value for businesses by strategically blending human-driven web development with cutting-edge AI technologies, driving their success and growth in the ever-evolving digital age.",
+    categories: [1, 2],
   },
   {
     // img: TestimonialImg04,
     // clientImg: ClientImg04,
     name: "Our Values",
-      // company: "Ray Ban",
-      content:
-        "Innovation: We constantly push the boundaries of technology, combining expert web development with the latest AI advancements to create innovative solutions. Customer Centric: Our customers are at the core of everything we do. We collaborate with you to ensure our solutions are aligned with your vision and deliver lasting impact.Security: With an unwavering focus on data protection, we implement robust security measures to ensure that your web applications remain secure and compliant. Quality: We are committed to delivering high-performance, reliable, and scalable web applications, built with precision and quality.",
-     categories: [1, 2],
+    // company: "Ray Ban",
+    content:
+      "Innovation: We constantly push the boundaries of technology, combining expert web development with the latest AI advancements to create innovative solutions. Customer Centric: Our customers are at the core of everything we do. We collaborate with you to ensure our solutions are aligned with your vision and deliver lasting impact.Security: With an unwavering focus on data protection, we implement robust security measures to ensure that your web applications remain secure and compliant. Quality: We are committed to delivering high-performance, reliable, and scalable web applications, built with precision and quality.",
+    categories: [1, 2],
   },
   {
     // img: TestimonialImg05,
     // clientImg: ClientImg05, 
-      name: "Why Choose Us?",
-      // company: "Ray Ban",
-      content:
-        "We understand the power of human expertise and AI integration. We create solutions that are designed to grow with your business, enhance user experiences and streamline business processes. With a focus on quality, security, and customer satisfaction. we ensure your project is delivered on time, within budget, and exceeds expectations. ",
-      categories: [1, 2],
+    name: "Why Choose Us?",
+    // company: "Ray Ban",
+    content:
+      "We understand the power of human expertise and AI integration. We create solutions that are designed to grow with your business, enhance user experiences and streamline business processes. With a focus on quality, security, and customer satisfaction. we ensure your project is delivered on time, within budget, and exceeds expectations. ",
+    categories: [1, 2],
   },
   {
     // img: TestimonialImg06,
@@ -80,12 +61,12 @@ const testimonials = [
   {
     // img: TestimonialImg07,
     // clientImg: ClientImg07, 
-      name: "How much does it cost to develop a custom web application?",
-      // company: "Disney",
-      content:
-        "The cost of developing a custom web application depends on several factors, including the features required, design complexity, and AI integrations. We offer tailored pricing based on your specific needs, and we’ll provide you with an estimate after discussing your project.",
-       
-      categories: [1, 3],
+    name: "How much does it cost to develop a custom web application?",
+    // company: "Disney",
+    content:
+      "The cost of developing a custom web application depends on several factors, including the features required, design complexity, and AI integrations. We offer tailored pricing based on your specific needs, and we’ll provide you with an estimate after discussing your project.",
+
+    categories: [1, 3],
   },
   {
     // img: TestimonialImg08,
@@ -93,7 +74,7 @@ const testimonials = [
     name: "Will my web application be mobile friendly?",
     // company: "Forbes Inc.",
     content:
-"Yes, all the web applications we develop are fully responsive, providing your users with access and a consistent experience regardless of the device they are using, whether it's a desktop computer, a smartphone, or a tablet.",    categories: [1, 3],
+      "Yes, all the web applications we develop are fully responsive, providing your users with access and a consistent experience regardless of the device they are using, whether it's a desktop computer, a smartphone, or a tablet.", categories: [1, 3],
   },
   {
     // img: TestimonialImg09,
@@ -102,7 +83,7 @@ const testimonials = [
     // company: "Cadbury",
     content:
       "The timeline for web application development varies depending on the complexity and scope of the project. Typically, a simple web application may take a few weeks, while larger, more complex applications could take several months. We’ll provide a detailed timeline after discussing your project requirements.",
-       categories: [1, 3],
+    categories: [1, 3],
   },
 ];
 export default function Testimonials() {
@@ -118,8 +99,8 @@ export default function Testimonials() {
             Particles.Ai
           </h2>
           <p className="text-lg text-white-200/65">
-          We are committed to providing top notch web development services
-           that help businesses achieve their goals through innovative solutions.
+            We are committed to providing top notch web development services
+            that help businesses achieve their goals through innovative solutions.
           </p>
         </div>
 
@@ -239,7 +220,7 @@ export function Testimonial({
     // img: StaticImageData;
     // clientImg: StaticImageData;
     name: string;
-    company: string;
+    // company: string;
     content: string;
     categories: number[];
   };
@@ -260,53 +241,37 @@ export function Testimonial({
       className={`relative rounded-2xl bg-gradient-to-br from-gray-900/50 via-gray-800/25 to-gray-900/50 p-5 backdrop-blur-sm transition-opacity before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] ${!testimonial.categories.includes(category) ? "opacity-30" : ""}`}
     >
       <div className="flex flex-col gap-4">
+        <p className="text-indigo-200/65 "></p>
         <div>
-          {/* <Image src={testimonial.clientImg} height={36} alt="Client logo" /> */}
-        </div>
-        <p className="text-indigo-200/65 before:content-['“'] after:content-['”']"></p>
-        <div>
-      {isLongContent && !isExpanded ? (
-        <span>
-          {content.substring(0, 185)}... 
-          <div 
-            style={{ color: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', cursor: 'pointer' }} 
-            onClick={handleToggle}
-          >
-            ...see more
-          </div>
-        </span>
-      ) : (
-        <div  data-aos="fade-in-down">
-          {content} 
-          {isLongContent && (
-           <div 
-           style={{ color: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', cursor: 'pointer' }} 
-           onClick={handleToggle}
-           data-aos="fade-in-down"
-         >
-           ...see less
-         </div>
+          {isLongContent && !isExpanded ? (
+            <span>
+              {content.substring(0, 185)}...
+              <div
+                style={{ color: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', cursor: 'pointer' }}
+                onClick={handleToggle}
+              >
+                ...see more
+              </div>
+            </span>
+          ) : (
+            <div data-aos="fade-in-down">
+              {content}
+              {isLongContent && (
+                <div
+                  style={{ color: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', cursor: 'pointer' }}
+                  onClick={handleToggle}
+                  data-aos="fade-in-down"
+                >
+                  ...see less
+                </div>
+              )}
+            </div>
           )}
         </div>
-      )}
-    </div>        
         <div className="flex items-center gap-3">
-          {/* <Image
-            className="inline-flex shrink-0 rounded-full"
-            src={testimonial.img}
-            width={36}
-            height={36}
-            alt={testimonial.name}
-          /> */}
           <div className="text-sm font-medium text-gray-200">
             <span>{testimonial.name}</span>
             <span className="text-gray-700"> - </span>
-            <a
-              className="text-indigo-200/65 transition-colors hover:text-indigo-500"
-              href="#0"
-            >
-              {testimonial.company}
-            </a>
           </div>
         </div>
       </div>
