@@ -34,9 +34,9 @@ export default function HeroHome() {
               loop
               muted
               playsInline
-              width="100%"
+              width="85%"
               height="50%"
-              // className="rounded-2xl"
+              className="rounded-2xl"
             >
               <source src="videos/video.mp4" type="video/mp4" />
               Your browser does not support the video tag.

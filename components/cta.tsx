@@ -58,7 +58,7 @@ export default function Cta() {
                 >
                   Contact Us
                 </MDBBtn>
-              </div>
+              </div >
 
               <div data-aos="fade-up" data-aos-delay={600}>
                 <MDBBtn
@@ -91,10 +91,10 @@ export default function Cta() {
                     >
                      
             <h5
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,#CC00FF,theme(colors.blue.400),theme(colors.blue.600),theme(colors.purple.300),theme(colors.purple.600))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-1xl font-semibold text-transparent md:text-1xl text-center"
+              className=" bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-1xl font-semibold  md:text-2xl text-center"
               data-aos="fade-up"
             >
-              Feel free to leave your information here, we'll get in touch soon.
+              Leave a message, we'll be in touch.
             </h5>
                       <MDBInput
                         wrapperClass="mb-4"
@@ -145,7 +145,7 @@ export default function Cta() {
                         required
                       />
                       <div className="text-center ">
-                        <MDBBtn type="submit" className="mb-4" style={{ margin: '42px', width: "46%" }}>
+                        <MDBBtn type="submit" className="mb-4" style={{ margin: '42px', width: "46%", backgroundColor: 'rgb(147 51 234 / var(--tw-text-opacity, 1))', }}>
                           Submit
                         </MDBBtn>
                       </div>
