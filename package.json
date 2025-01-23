@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "static": "next build && touch ./out/.nojekyll && echo 'particlesai.com' > ./out/CNAME",
  
-    "deploy": "gh-pages -d out -t true"
+    "deploy": "gh-pages -d out "
     },
   "dependencies": {
     "@headlessui/react": "^2.1.3",
