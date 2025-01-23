@@ -16,4 +16,6 @@ const nextConfig = {
   },
 }
  
-module.exports = nextConfig
+module.exports = {
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Ready_App/' : '',
+};
