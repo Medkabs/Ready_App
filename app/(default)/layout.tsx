@@ -1,9 +1,9 @@
 "use client";
-import './globals.css';
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./css/style.css"
+
 
 import Footer from "@/components/ui/footer";
 
