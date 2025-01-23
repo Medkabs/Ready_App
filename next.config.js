@@ -10,8 +10,8 @@ const nextConfig = {
   // skipTrailingSlashRedirect: true,
  
   // Optional: Change the output directory `out` -> `dist`
-  // distDir: 'out',
+  distDir: 'out',
   
-}
+};
  
 module.exports = nextConfig
