@@ -11,11 +11,7 @@ const nextConfig = {
  
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'out',
-  images:{
-    unoptimized: true,
-  },
+  
 }
  
-module.exports = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Ready_App/' : '',
-};
+module.exports = nextConfig
