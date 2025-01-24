@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import Logo from "./logo";
+import { useState } from "react"; // Import useState
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
+
   return (
     <header className="z-30 mt-2 w-full md:mt-5">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -13,9 +16,34 @@ export default function Header() {
             <Logo />
           </div>
 
+          {/* Hamburger menu (mobile) */}
+          <button
+            className="block md:hidden text-white hover:text-gray-300"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              />
+            </svg>
+          </button>
+
           {/* Centered Navigation links */}
-          <nav className="flex-1">
-            <ul className="flex justify-center items-center gap-6">
+          <nav
+            className={`absolute md:relative top-14 md:top-0 left-0 w-full md:w-auto bg-gray-900/90 md:bg-transparent transition-transform transform ${
+              isMenuOpen ? "translate-y-0" : "-translate-y-full"
+            } md:translate-y-0 z-20`}
+          >
+            <ul className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-6 md:flex-1">
               <li>
                 <Link href="#About" className="text-white hover:text-gray-300">
                   About Us
@@ -36,11 +64,6 @@ export default function Header() {
                   FAQs
                 </Link>
               </li>
-              {/* <li>
-                <Link href="/ai" className="text-white hover:text-gray-300">
-                  AI
-                </Link>
-              </li> */}
               <li>
                 <Link href="#ContactUs" className="text-white hover:text-gray-300">
                   Contact Us
