@@ -16,6 +16,7 @@ export default function Features() {
           width={760}
           height={668}
           alt="Blurred shape"
+          layout ="responsive"
         />
       </div>
       <div
