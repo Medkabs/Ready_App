@@ -50,7 +50,7 @@ export default function Cta() {
               In a digital world, your website is your IDENTITY
             </h2>
             <div id="ContactUs"   className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <div data-aos="fade-up">
+              <div id="ContactUs" data-aos="fade-up">
                 <MDBBtn
                   className="relative inline-flex items-center"
                   style={{ margin: '8px' }}

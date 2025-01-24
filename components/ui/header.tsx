@@ -96,7 +96,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-white hover:text-gray-300">
+                <Link href="#ContactUs" className="text-white hover:text-gray-300">
                   Contact Us
                 </Link>
               </li>
