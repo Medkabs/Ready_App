@@ -48,7 +48,7 @@ export default function Features() {
               budget, with an emphasis on Customer experience and success.
             </p>
           </div>
-          <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
+          <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up" style={{marginBottom:'64px'}}>
             <Image
               className="max-w-none w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%]"
               src={FeaturesImage}

@@ -115,7 +115,7 @@ export default function Workflows() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-white-900/65">
+                  <p className="text-white">
                   We build web applications that are designed to grow with your business,
                    ensuring long term success and sustainability.
                   </p>
@@ -162,7 +162,7 @@ export default function Workflows() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-white-900/50">
+                  <p className="text-white">
                   Our team crafts bespoke solutions that meet your unique requirements,
                    delivering functionality and performance.
                   </p>
