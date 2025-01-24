@@ -16,7 +16,6 @@ export default function Features() {
           width={760}
           height={668}
           alt="Blurred shape"
-          layout ="responsive"
         />
       </div>
       <div
@@ -37,15 +36,15 @@ export default function Features() {
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50">
               <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-              Advanced Project Management
+                Advanced Project Management
               </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.blue.500),theme(colors.indigo.500),theme(colors.purple.600),theme(colors.purple.300),theme(colors.blue.500))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-            Delivering Excellence in Web Development
+              Delivering Excellence in Web Development
             </h2>
             <p className="text-lg text-indigo-200/65">
-            Our experienced team uses advanced project management techniques
-             to ensure your web application is delivered on time and within
+              Our experienced team uses advanced project management techniques
+              to ensure your web application is delivered on time and within
               budget, with an emphasis on Customer experience and success.
             </p>
           </div>
@@ -53,9 +52,10 @@ export default function Features() {
             <Image
               className="max-w-none"
               src={FeaturesImage}
+              alt="Features"
+              layout="responsive"
               width={800}
               height={384}
-              alt="Features"
             />
           </div>
           {/* Items */}
@@ -73,13 +73,13 @@ export default function Features() {
                   d="m16.295 5.393 7.528 2.034-4.436 16.412L5.87 20.185l.522-1.93 11.585 3.132 3.392-12.55-5.597-1.514.522-1.93Z"
                 />
               </svg>
-              <h3  id="OurMethod"className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-100 neon-text">
+              <h3 id="OurMethod" className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-100 neon-text">
                 Quality Assurance
               </h3>
               <p className="text-white">
-              Our team ensures your web app performs flawlessly by thoroughly 
-              testing for bugs, performance issues, and security vulnerabilities.
-               We guarantee a smooth, reliable user experience across all devices
+                Our team ensures your web app performs flawlessly by thoroughly
+                testing for bugs, performance issues, and security vulnerabilities.
+                We guarantee a smooth, reliable user experience across all devices
                 and browsers before launch.
               </p>
             </article>
@@ -94,16 +94,16 @@ export default function Features() {
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-600">
-              Real Time Collaboration
+                Real Time Collaboration
               </h3>
               <p className="text-white-200/65">
-              We emphasize real time collaboration throughout the 
-               development process. Our team works closely with you, maintaining open
+                We emphasize real time collaboration throughout the
+                development process. Our team works closely with you, maintaining open
                 lines of communication to ensure your vision is fully realized. 
                 We provide platforms that allow for instant
-                 feedback, regular updates, and transparent progress tracking.
-                  Whether it's through virtual meetings, shared project dashboards, 
-                  or instant messaging, we keep you involved every step of the way.
+                feedback, regular updates, and transparent progress tracking.
+                Whether it's through virtual meetings, shared project dashboards,
+                or instant messaging, we keep you involved every step of the way.
               </p>
             </article>
             <article>
@@ -122,16 +122,14 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[2rem] font-bold text-purple-600 neon-text">
                 Secure Solutions AND Optimized Performance
               </h3>
-              
               <p className="text-white-200/65">
-           
-              We prioritize building secure, privacy compliant applications by 
-              implementing advanced security measures to 
-               protect against threats and ensure regulatory compliance. 
-              Our solutions are optimized for performance,
-                 to deliver fast load times, smooth responsiveness,
-                 and reliability. We help deliver 
-                 secure and seamless experiences.
+                We prioritize building secure, privacy compliant applications by
+                implementing advanced security measures to
+                protect against threats and ensure regulatory compliance.
+                Our solutions are optimized for performance,
+                to deliver fast load times, smooth responsiveness,
+                and reliability. We help deliver
+                secure and seamless experiences.
               </p>
             </article>
             <article>
@@ -153,13 +151,13 @@ export default function Features() {
                 <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-100">
-              Focus on SEO
+                Focus on SEO
               </h3>
               <p className="text-white-200/65">
-              We focus on every aspects of SEO to boost your website’s visibility on search engines, 
-              driving more traffic and improving your online presence. We optimize
-               everything from keywords to technical aspects, ensuring your site 
-               ranks higher and provides value to users
+                We focus on every aspect of SEO to boost your website’s visibility on search engines,
+                driving more traffic and improving your online presence. We optimize
+                everything from keywords to technical aspects, ensuring your site
+                ranks higher and provides value to users.
               </p>
             </article>
             <article>
@@ -176,13 +174,13 @@ export default function Features() {
                 <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-600">
-              Flexible Solutions
+                Flexible Solutions
               </h3>
               <p className="text-white-200/65">
-              We offer adaptable development processes that evolve with your 
-              project’s needs. Whether it's scaling, adding features, or 
-              responding to new priorities, our team stays agile to ensure your
-               project aligns with changing requirements and business goals.
+                We offer adaptable development processes that evolve with your
+                project’s needs. Whether it's scaling, adding features, or
+                responding to new priorities, our team stays agile to ensure your
+                project aligns with changing requirements and business goals.
               </p>
             </article>
             <article>
@@ -202,9 +200,8 @@ export default function Features() {
                 Customer Priority
               </h3>
               <p className="text-white-200/65">
-                We UNDERSTAND that our CUSTOMERS are at the CENTER of our MISSION. As such, 
-                We are dedicated to go above and beyond to provide ongoing customer service and excellent technical support.
-.
+                We UNDERSTAND that our CUSTOMERS are at the CENTER of our MISSION. As such,
+                We are dedicated to going above and beyond to provide ongoing customer service and excellent technical support.
               </p>
             </article>
           </div>
