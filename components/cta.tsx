@@ -42,7 +42,7 @@ export default function Cta() {
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="bg-gradient-to-r from-transparent via-gray-800/50 py-12 md:py-20">
-          <div className="mx-auto max-w-3xl text-center">
+          <div id= "contact" className="mx-auto max-w-3xl text-center">
             <h2
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,#CC00FF,theme(colors.blue.400),theme(colors.blue.600),theme(colors.purple.300),theme(colors.purple.600))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-3xl font-semibold text-transparent md:text-4xl"
               data-aos="fade-up"

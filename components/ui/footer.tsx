@@ -105,7 +105,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#ContactUs"
+                  href="#contact"
                 >
                   Contact Us
                 </a>
@@ -135,7 +135,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="#About"
                 >
                   {/* Terms of service */}
                 </a>
@@ -143,7 +143,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#ContactUs"
+                  href="#contact"
                 >
                   Report a Problem
                 </a>
