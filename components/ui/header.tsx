@@ -60,11 +60,11 @@ export default function Header() {
                   FAQs
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#contact" className="text-white hover:text-gray-300">
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
 
@@ -95,11 +95,11 @@ export default function Header() {
                   FAQs
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#ContactUs" className="text-white hover:text-gray-300">
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
