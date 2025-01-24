@@ -84,7 +84,7 @@ export default function Cta() {
                  <input
                     type="hidden"
                     name="_next"
-                    value="https://particlesai.com/#ContactUs.html"
+                    value="https://particlesai.com"
                  />
                     <MDBContainer className="p-3 my-5 d-flex flex-column "
                   
