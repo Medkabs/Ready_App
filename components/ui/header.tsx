@@ -61,7 +61,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#ContactUs" className="text-white hover:text-gray-300">
+                <Link href="#contact" className="text-white hover:text-gray-300">
                   Contact Us
                 </Link>
               </li>
@@ -76,7 +76,7 @@ export default function Header() {
           >
             <ul className="flex flex-col justify-center items-center gap-6 py-6">
               <li>
-                <Link href="#About" className="text-white hover:text-gray-300">
+                <Link href="#testi" className="text-white hover:text-gray-300">
                   About Us
                 </Link>
               </li>
@@ -91,7 +91,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#About" className="text-white hover:text-gray-300">
+                <Link href="#quest" className="text-white hover:text-gray-300">
                   FAQs
                 </Link>
               </li>

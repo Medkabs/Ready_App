@@ -12,6 +12,7 @@ const testimonials = [
     content:
       "At Particles.Ai, we blend human creativity with the power of Artificial Intelligence to deliver high quality, secure, and scalable web applications tailored to meet your unique needs.",
     categories: [1, 2],
+    id: "testi",
   },
   {
     // img: TestimonialImg02,
@@ -57,6 +58,7 @@ const testimonials = [
     content:
       " Yes, we offer flexible development services and can accommodate changes or updates to your web application after launch. Whether it’s adding new features or making design adjustments, our team is here to help.",
     categories: [1, 3],
+    id: "quest",
   },
   {
     // img: TestimonialImg07,
