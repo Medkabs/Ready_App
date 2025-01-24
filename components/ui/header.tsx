@@ -37,13 +37,9 @@ export default function Header() {
             </svg>
           </button>
 
-          {/* Centered Navigation links */}
-          <nav
-            className={`absolute md:relative top-14 md:top-0 left-0 w-full md:w-auto bg-gray-900/90 md:bg-transparent transition-transform transform ${
-              isMenuOpen ? "translate-y-0" : "-translate-y-full"
-            } md:translate-y-0 z-20`}
-          >
-            <ul className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-6 md:flex-1">
+          {/* Navigation links - Always visible on larger screens */}
+          <nav className="hidden md:block flex-1">
+            <ul className="flex justify-center items-center gap-6">
               <li>
                 <Link href="#About" className="text-white hover:text-gray-300">
                   About Us
@@ -64,7 +60,41 @@ export default function Header() {
                   FAQs
                 </Link>
               </li>
-              {/* "Contact Us" link in both desktop and mobile navbar */}
+              <li>
+                <Link href="#ContactUs" className="text-white hover:text-gray-300">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Mobile Navigation links (burger menu) */}
+          <nav
+            className={`${
+              isMenuOpen ? "block" : "hidden"
+            } md:hidden absolute top-14 left-0 w-full bg-gray-900/90`}
+          >
+            <ul className="flex flex-col justify-center items-center gap-6 py-6">
+              <li>
+                <Link href="#About" className="text-white hover:text-gray-300">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#Services" className="text-white hover:text-gray-300">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="#OurMethod" className="text-white hover:text-gray-300">
+                  Our Method
+                </Link>
+              </li>
+              <li>
+                <Link href="#About" className="text-white hover:text-gray-300">
+                  FAQs
+                </Link>
+              </li>
               <li>
                 <Link href="#ContactUs" className="text-white hover:text-gray-300">
                   Contact Us
