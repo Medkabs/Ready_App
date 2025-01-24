@@ -127,16 +127,16 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#About"
+                  href="#testi"
                 >
                   FAQs
                 </a>
               </li> 
-              {/* <li>
+              <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#testi"
-                > */}
+                >
                   {/* Terms of service */}
                 </a>
               </li>
