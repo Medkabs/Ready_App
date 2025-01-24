@@ -102,14 +102,14 @@ export default function Footer() {
                   Blog
                 </a>
               </li> */}
-              <li>
+              {/* <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#contact"
                 >
                   Contact Us
                 </a>
-              </li>
+              </li> */}
               {/* <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
