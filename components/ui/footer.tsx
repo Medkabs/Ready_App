@@ -140,14 +140,14 @@ export default function Footer() {
                   {/* Terms of service */}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#contact"
                 >
                   Report a Problem
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* 4th block */}
