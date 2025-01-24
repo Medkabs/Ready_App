@@ -12,7 +12,7 @@ const testimonials = [
     content:
       "At Particles.Ai, we blend human creativity with the power of Artificial Intelligence to deliver high quality, secure, and scalable web applications tailored to meet your unique needs.",
     categories: [1, 2],
-    id: "testi",
+    
   },
   {
     // img: TestimonialImg02,
@@ -58,7 +58,7 @@ const testimonials = [
     content:
       " Yes, we offer flexible development services and can accommodate changes or updates to your web application after launch. Whether it’s adding new features or making design adjustments, our team is here to help.",
     categories: [1, 3],
-    id: "quest",
+    
   },
   {
     // img: TestimonialImg07,
@@ -96,7 +96,7 @@ export default function Testimonials() {
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.400/.25),transparent)1] md:py-20">
         {/* Section header */}
-        <div className="mx-auto max-w-3xl pb-12 text-center">
+        <div id= "testi" className="mx-auto max-w-3xl pb-12 text-center">
           <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.blue.600),theme(colors.blue.500),theme(colors.purple.600),theme(colors.purple.300),theme(colors.blue.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
             Particles.Ai
           </h2>
