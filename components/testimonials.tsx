@@ -10,7 +10,7 @@ const testimonials = [
     name: "About US",
     // company: "",
     content:
-      "At Particles.Ai, we blend human creativity with the power of Artificial Intelligence to deliver high quality, secure, and scalable web applications tailored to meet your unique needs.",
+      "At Particles.Ai, we seamlessly integrate custom development with AI driven features, crafting intelligent and user centric applications that streamline operations, enhance user engagement, and drive significant business growth. Our  approach empowers businesses to gain a competitive edge in the digital landscape by delivering exceptional experiences that anticipate user needs and unlock new avenues for success. ",
     categories: [1, 2],
     
   },
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Mission",
     // company: "",
     content:
-      "We are at the forefront of modern web development, fusing human expertise with the power of AI. By seamlessly integrating custom development with AI-driven features, we craft intelligent and user-centric applications that streamline operations, enhance user engagement, and drive significant business growth. This innovative approach empowers businesses to gain a competitive edge in the digital landscape by delivering exceptional experiences that anticipate user needs and unlock new avenues for success.",
+      " We  are on a mission to blend human creativity with the power of Artificial Intelligence to deliver high quality, secure, and scalable web applications tailored to meet unique needs",
     categories: [1, 2],
   },
   {
@@ -29,7 +29,7 @@ const testimonials = [
     name: "Vision.",
     // company: "Binance",
     content:
-      "To be at the forefront of creating significant value for businesses by strategically blending human-driven web development with cutting-edge AI technologies, driving their success and growth in the ever-evolving digital age.",
+      "To be at the forefront of creating significant value for businesses by strategically blending human driven web development with cutting edge AI technologies, driving their success and growth in the ever evolving digital age.",
     categories: [1, 2],
   },
   {
