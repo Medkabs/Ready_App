@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Logo from "./logo";
-import { useState } from "react"; // Import useState
+import { useState } from "react";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="z-30 mt-2 w-full md:mt-5">
@@ -64,6 +64,7 @@ export default function Header() {
                   FAQs
                 </Link>
               </li>
+              {/* "Contact Us" link in both desktop and mobile navbar */}
               <li>
                 <Link href="#ContactUs" className="text-white hover:text-gray-300">
                   Contact Us
