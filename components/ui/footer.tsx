@@ -131,7 +131,7 @@ export default function Footer() {
                 >
                   FAQs
                 </a>
-              </li>qswdefr . jewq v lkjheds 
+              </li> 
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
