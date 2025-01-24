@@ -50,10 +50,10 @@ export default function Features() {
           </div>
           <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
             <Image
-              className="max-w-none"
+              className="max-w-full w-full sm:w-[80%] md:w-[60%] lg:w-[50%]"
               src={FeaturesImage}
               alt="Features"
-              layout="responsive"
+              layout="intrinsic"
               width={800}
               height={384}
             />
@@ -73,7 +73,10 @@ export default function Features() {
                   d="m16.295 5.393 7.528 2.034-4.436 16.412L5.87 20.185l.522-1.93 11.585 3.132 3.392-12.55-5.597-1.514.522-1.93Z"
                 />
               </svg>
-              <h3 id="OurMethod" className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-100 neon-text">
+              <h3
+                id="OurMethod"
+                className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-100 neon-text"
+              >
                 Quality Assurance
               </h3>
               <p className="text-white">
@@ -97,13 +100,13 @@ export default function Features() {
                 Real Time Collaboration
               </h3>
               <p className="text-white-200/65">
-                We emphasize real time collaboration throughout the
-                development process. Our team works closely with you, maintaining open
-                lines of communication to ensure your vision is fully realized. 
-                We provide platforms that allow for instant
-                feedback, regular updates, and transparent progress tracking.
-                Whether it's through virtual meetings, shared project dashboards,
-                or instant messaging, we keep you involved every step of the way.
+                We emphasize real time collaboration throughout the development
+                process. Our team works closely with you, maintaining open lines of
+                communication to ensure your vision is fully realized. We provide
+                platforms that allow for instant feedback, regular updates, and
+                transparent progress tracking. Whether it's through virtual meetings,
+                shared project dashboards, or instant messaging, we keep you involved
+                every step of the way.
               </p>
             </article>
             <article>
@@ -124,12 +127,10 @@ export default function Features() {
               </h3>
               <p className="text-white-200/65">
                 We prioritize building secure, privacy compliant applications by
-                implementing advanced security measures to
-                protect against threats and ensure regulatory compliance.
-                Our solutions are optimized for performance,
-                to deliver fast load times, smooth responsiveness,
-                and reliability. We help deliver
-                secure and seamless experiences.
+                implementing advanced security measures to protect against threats and
+                ensure regulatory compliance. Our solutions are optimized for
+                performance, to deliver fast load times, smooth responsiveness, and
+                reliability. We help deliver secure and seamless experiences.
               </p>
             </article>
             <article>
@@ -154,10 +155,10 @@ export default function Features() {
                 Focus on SEO
               </h3>
               <p className="text-white-200/65">
-                We focus on every aspect of SEO to boost your website’s visibility on search engines,
-                driving more traffic and improving your online presence. We optimize
-                everything from keywords to technical aspects, ensuring your site
-                ranks higher and provides value to users.
+                We focus on every aspect of SEO to boost your website’s visibility on
+                search engines, driving more traffic and improving your online presence.
+                We optimize everything from keywords to technical aspects, ensuring your
+                site ranks higher and provides value to users.
               </p>
             </article>
             <article>
@@ -169,39 +170,18 @@ export default function Features() {
               >
                 <path
                   fillOpacity=".48"
-                  d="M12 8.8a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                  d="M12 8.8a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM5.2 16a5.2 5.2 0 1 1 10.4 0H5.2Z"
                 />
-                <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
+                <path d="M23 22H1v-2h22v2Z" />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-600">
-                Flexible Solutions
+              <h3 className="mb-1 font-nacelle text-[2rem] font-semibold text-blue-100">
+                Cloud Hosting & Support
               </h3>
               <p className="text-white-200/65">
-                We offer adaptable development processes that evolve with your
-                project’s needs. Whether it's scaling, adding features, or
-                responding to new priorities, our team stays agile to ensure your
-                project aligns with changing requirements and business goals.
-              </p>
-            </article>
-            <article>
-              <svg
-                className="mb-3 fill-purple-600"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-              >
-                <path
-                  fillOpacity=".48"
-                  d="M19 8h5v2h-5V8Zm-4 5h9v2h-9v-2Zm9 5H11v2h13v-2Z"
-                />
-                <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
-              </svg>
-              <h3 className="mb-1 font-nacelle text-[2rem] font-semibold text-purple-600">
-                Customer Priority
-              </h3>
-              <p className="text-white-200/65">
-                We UNDERSTAND that our CUSTOMERS are at the CENTER of our MISSION. As such,
-                We are dedicated to going above and beyond to provide ongoing customer service and excellent technical support.
+                We offer cloud hosting solutions and ongoing support, ensuring
+                optimal performance and minimal downtime. Our team is here to provide
+                assistance, troubleshoot issues, and implement updates to keep your
+                application running smoothly.
               </p>
             </article>
           </div>
